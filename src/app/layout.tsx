@@ -1,5 +1,6 @@
 'use client'
 import { ThemeProvider } from 'styled-components'
+import { LanguageProvider } from '../context/LanguageContext';
 import StyledComponentsRegistry from '../lib/registry'
 import Header from './components/header'
 
@@ -24,15 +25,17 @@ function RootLayout({
         />
       </head>
       <body>
-        <StyledComponentsRegistry>
-          <ThemeProvider theme={lightTheme}>
-            <GlobalStyles />
-            <Header />
-            <main>{children}</main>
-            <footer>
-            </footer>
-          </ThemeProvider>
-        </StyledComponentsRegistry>
+				<LanguageProvider>
+        	<StyledComponentsRegistry>
+        	  <ThemeProvider theme={lightTheme}>
+        	    <GlobalStyles />
+        	    <Header />
+        	    <main>{children}</main>
+        	    <footer>
+        	    </footer>
+        	  </ThemeProvider>
+        	</StyledComponentsRegistry>
+				</LanguageProvider>
       </body>
     </html>
   )

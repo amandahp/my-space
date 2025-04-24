@@ -4,20 +4,38 @@
 		"about": "About",
 		"projects": "Projects",
 		"contact": "Contact",
-		"language": "Language"
+		"language": "Language",
+		"home":{
+			"imAmanda": "Hi, I'm Amanda.",
+			"position": "I'm a Front-End Developer",
+			"text": "Creating responsive and engaging digital experiences.",
+			"skills":"Skills"
+		}
 	},
 	"es":{
 		"logo": "Mi Empresa",
 		"about": "Acerca de",
 		"projects": "Proyectos",
 		"contact": "Contacto",
-		"language": "Idioma"
+		"language": "Idioma",
+		"home": {
+			"imAmanda": "¡Hola! Soy Amanda.",
+			"position": "Soy Desarrolladora Front-End",
+			"text" : "Creando experiencias digitales y responsivas.",
+			"skills": "Habilidades"
+		}
 	},
 	"pt": {
 		"logo": "Meu logo",
 		"about": "Sobre",
 		"projects": "Projetos",
 		"contact": "Contato",
-		"language": "Idioma"
+		"language": "Idioma",
+		"home": {
+			"imAmanda": "Olá, Eu sou a Amanda.",
+			"position": "Sou desenvolvedora Front-End",
+			"text": "Criando experiências digitais e responsivas",
+			"skills":"Habilidades"
+		}
 	}
 }

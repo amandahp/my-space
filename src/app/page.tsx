@@ -1,95 +1,60 @@
+'use client';
+import { Section, Container, TextBlock, SkillBox, SkillsGrid } from './styles';
+import { useLanguage} from '../context/LanguageContext';
+import translations from "../data/translate.json";
 import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	const skill= [
+		{ name: 'Node', icon: '/utils/icon/node-js-svgrepo-com.svg' },
+		{ name: 'TypeScript', icon: '/utils/icon/typescript-official-svgrepo-com.svg' },
+		{ name: 'ReactJs', icon: '/utils/icon/react-javascript-js-framework-facebook-svgrepo-com.svg' },
+		{ name: 'Python', icon: '/utils/icon/python-svgrepo-com.svg'}
+	];
+	
+	const { lang, setLang } = useLanguage();
+  const { home } = translations[lang];
+	const { imAmanda, position, text, skills } = home; 
+	
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  return (
+    <Container>
+      <Section>
+        <Image src="/im.png" alt="Minha foto" 
+  				width={300}
+  				height={300}
+  				style={{
+    				borderRadius: "50%",
+    				objectFit: "cover"
+  			}} />
+        <TextBlock>
+          <h1 className='name'>{imAmanda}</h1>
+					<h2>{position}</h2>
+          <p>{text}</p>
+					<a href='https://www.linkedin.com/in/amanda-hoffmann/' target="_blank" rel="noopener noreferrer">Linkedin</a>
+					<a href='https://github.com/amandahp' target="_blank" rel="noopener noreferrer">GitHub</a>
+        </TextBlock>
+      </Section>
+			<Section>
+        <TextBlock>
+          <h1 className='about'>About me</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </TextBlock>
+      </Section>
+      <Section>
+				<TextBlock>
+					<h1 className='skills'>{skills}</h1>
+        	<SkillsGrid>
+						{skill.map((skill) => (
+    					<SkillBox key={skill.name}>
+      					<img src={skill.icon} alt={skill.name} />
+      					<span>{skill.name}</span>
+    					</SkillBox>
+  					))}
+        	</SkillsGrid>
+				</TextBlock>
+      </Section>
+    </Container>
   );
 }

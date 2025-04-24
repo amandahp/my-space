@@ -5,6 +5,7 @@ export const lightTheme = {
     primary: "#6D28D9",     // roxo
     secondary: "#0ABAB5",   // tiffany
     gradient: "linear-gradient(45deg, #6D28D9 0%, #0ABAB5 100%)",
+		black: "#474A51",
   },
 };
 
