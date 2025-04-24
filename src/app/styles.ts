@@ -7,6 +7,8 @@ export const Container = styled.div`
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
+
+
 `;
 
 export const Section = styled.section`
@@ -36,6 +38,11 @@ export const Section = styled.section`
 	p {
 		color: ${({theme}) => theme.colors.black};
 		font-size: 20px;
+		text-align: justify;
+	}
+	
+	.textblock-home{
+		padding: 2rem;
 	}
 `;
 
@@ -113,4 +120,65 @@ export const SkillBox = styled.div`
     font-weight: 500;
     text-align: center;
   }
+
+	transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(106, 40, 217, 0.3);
+  }
 `;
+
+export const SkillsCarousel = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: hidden;
+`;
+
+export const SkillsTrack = styled.div`
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 1rem 0;
+`;
+
+export const CarouselButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.colors.secondary};
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  &.prev {
+    left: 10px;
+  }
+
+  &.next {
+    right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 30px;
+    height: 30px;
+  }
+`;
+

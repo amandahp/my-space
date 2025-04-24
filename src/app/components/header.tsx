@@ -33,10 +33,10 @@ const Header: React.FC = () => {
       <HeaderContent>
 				<Logo href="/">
 					<Image
-						src="/utils/ahp-high-resolution-logo-light.png"
+						src="/utils/ahp-high-resolution-logo.png"
 						alt="Logo de Amanda"
-						width={100}
-						height={100}
+						width={50}
+						height={50}
 					/>
 				</Logo>
         <Nav>

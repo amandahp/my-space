@@ -9,7 +9,9 @@
 			"imAmanda": "Hi, I'm Amanda.",
 			"position": "I'm a Front-End Developer",
 			"text": "Creating responsive and engaging digital experiences.",
-			"skills":"Skills"
+			"skills":"Skills",
+			"about": "About Me",
+			"textAboutMe": "My journey in programming began during my studies in Telecommunications Systems at the Federal University of Technology – Paraná (UTFPR). That course was my gateway into the world of technology, and it sparked a strong desire to learn more about programming.\n\nWhen the pandemic hit, classes were suspended, and I had to continue studying on my own. That challenge turned into an opportunity: I landed my first internship as a developer. During this experience, I grew a lot, especially by building applications with React and developing automation tools using Python.\n\nIn the following years, I had new professional opportunities that allowed me to broaden my skills even more. I worked with several technologies and deepened my understanding of concepts such as software architecture, Clean Architecture, Design Systems, and micro front-ends.\n\nWhile my current specialty is front-end development, I’ve had frequent experience with back-end and databases, which gives me a more complete view of application development. In 2023, I completed a bootcamp at Ironhack to further improve my performance as a developer.\n\nRight now, I'm focusing on sharpening my Python skills, since I have a strong interest in working with data science in the future — a field I'm truly passionate about.\n\nI’m a naturally curious person, and rarely settle for the first answer. I always strive to deeply understand the problem and find the best possible solution.\n\nOutside of tech, I have a few personal passions: I love photography, traveling, learning new things, and I definitely have a soft spot for data."
 		}
 	},
 	"es":{
@@ -22,7 +24,9 @@
 			"imAmanda": "¡Hola! Soy Amanda.",
 			"position": "Soy Desarrolladora Front-End",
 			"text" : "Creando experiencias digitales y responsivas.",
-			"skills": "Habilidades"
+			"skills": "Habilidades",
+			"about": "Sobre mí",
+			"textAboutMe":"Mi camino en la programación comenzó durante mis estudios en Sistemas de Telecomunicaciones en la Universidad Tecnológica Federal de Paraná (UTFPR). Ese curso fue mi puerta de entrada al mundo de la tecnología y despertó en mí un fuerte deseo de aprender más sobre programación.\n\nCon la llegada de la pandemia, las clases fueron suspendidas y tuve que continuar mis estudios de forma autodidacta. Ese desafío se convirtió en una oportunidad: conseguí mi primera pasantía como desarrolladora. Durante esa experiencia, crecí mucho, especialmente desarrollando aplicaciones con React y creando herramientas de automatización con Python.\n\nEn los años siguientes, tuve nuevas oportunidades profesionales que me permitieron ampliar aún más mis conocimientos. Trabajé con varias tecnologías y profundicé en conceptos como arquitectura de software, Clean Architecture, Design Systems y micro front-ends.\n\nActualmente, mi especialidad es el desarrollo front-end, aunque he tenido bastante contacto con back-end y bases de datos, lo que me da una visión más completa del desarrollo de aplicaciones. En 2023, realicé un bootcamp en Ironhack con el objetivo de mejorar aún más mi desempeño como programadora.\n\nHoy en día, estoy enfocada en profundizar mis conocimientos en Python, ya que tengo mucho interés en trabajar en el futuro con ciencia de datos, un área que me encanta.\n\nSoy una persona naturalmente curiosa y rara vez me conformo con la primera respuesta. Siempre busco comprender bien el problema y encontrar la mejor solución posible.\n\nFuera del mundo tech, tengo algunas pasiones personales: me encanta la fotografía, viajar, aprender cosas nuevas y, sin duda, tengo una debilidad por los datos."
 		}
 	},
 	"pt": {
@@ -35,7 +39,9 @@
 			"imAmanda": "Olá, Eu sou a Amanda.",
 			"position": "Sou desenvolvedora Front-End",
 			"text": "Criando experiências digitais e responsivas",
-			"skills":"Habilidades"
+			"skills":"Habilidades",
+			"about": "Sobre Mim",
+			"textAboutMe": "Minha jornada na programação começou durante meus estudos em Sistemas de Telecomunicações na Universidade Tecnológica Federal do Paraná (UTFPR). Esse curso foi minha porta de entrada para o universo da tecnologia, despertando em mim uma grande vontade de aprender mais sobre programação.\n\nCom a chegada da pandemia, as aulas foram suspensas, e precisei continuar estudando por conta própria. Esse desafio acabou sendo uma oportunidade: consegui meu primeiro estágio como desenvolvedora. Durante essa experiência, evoluí muito, especialmente no desenvolvimento de aplicações com React e na criação de ferramentas de automação usando Python.\n\nNos anos seguintes, tive novas oportunidades profissionais que me permitiram expandir ainda mais meus conhecimentos. Trabalhei com diversas tecnologias e aprofundei conceitos como arquitetura de software, Clean Architecture, Design System e micro front-ends.\n\nMinha especialidade atual é a área de front-end, mas já tive bastante contato com back-end e banco de dados, o que me proporciona uma visão mais completa do desenvolvimento de aplicações. Em 2023, participei de um bootcamp na Ironhack, com o objetivo de melhorar ainda mais minha performance como programadora.\n\nAtualmente, estou me dedicando ao aperfeiçoamento em Python, pois tenho muito interesse em atuar futuramente com ciência de dados — uma área pela qual tenho verdadeira admiração.\n\nSou uma pessoa curiosa por natureza, e raramente aceito a primeira resposta como definitiva. Sempre busco entender o problema a fundo e encontrar a melhor solução possível.\n\nAlém da tecnologia, tenho alguns hobbies que me acompanham há anos: adoro fotografia, viajar, aprender coisas novas e, claro, tenho uma queda especial por dados."
 		}
 	}
 }
