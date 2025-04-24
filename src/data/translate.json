@@ -1,0 +1,23 @@
+{
+	"en" :{
+		"logo": "My Company",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact",
+		"language": "Language"
+	},
+	"es":{
+		"logo": "Mi Empresa",
+		"about": "Acerca de",
+		"projects": "Proyectos",
+		"contact": "Contacto",
+		"language": "Idioma"
+	},
+	"pt": {
+		"logo": "Meu logo",
+		"about": "Sobre",
+		"projects": "Projetos",
+		"contact": "Contato",
+		"language": "Idioma"
+	}
+}
