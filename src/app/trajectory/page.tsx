@@ -22,7 +22,7 @@ export default function Timeline() {
 	const { timeline, trajectory } = translate[lang];
 
 	const { title } = trajectory;
-	const timelineEntries = Object.entries(timeline).sort((a, b) => b[0] - a[0]);
+	const timelineEntries = Object.entries(timeline).sort((a, b) => Number(b[0]) - Number(a[0]));
 
 	return (
 		<Container>
