@@ -3,17 +3,20 @@
 import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { HeaderContainer, HeaderContent, Logo, NavItem, LanguageSwitcher, Nav } from './header.styles';
+import { HeaderContainer, HeaderContent, Logo, NavItem, LanguageSwitcher, Nav, HamburgerButton, MobileMenu } from './header.styles';
 import { useLanguage } from '../lib/context/LanguageContext';
 import translations from "../../data/translate.json";
 
 
 const Header: React.FC = () => {
 	const [isFixed, setIsFixed] = React.useState(false);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
 	const router = useRouter();
 
 	const navigateToPage = (page: string) => {
 		router.push(`/${page}`);
+		setIsMobileMenuOpen(false);
 	};
 
 	React.useEffect(() => {
@@ -44,6 +47,8 @@ const Header: React.FC = () => {
 						height={200}
 					/>
 				</Logo>
+
+
 				<Nav>
 					<NavItem onClick={() => navigateToPage('')}>{about}</NavItem>
 					<NavItem onClick={() => navigateToPage('trajectory')}>{projects}</NavItem>
@@ -54,6 +59,19 @@ const Header: React.FC = () => {
 					<button onClick={() => setLang('en')}>EN</button>
 					<button onClick={() => setLang('es')}>ES</button>
 				</LanguageSwitcher>
+				<HamburgerButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+					☰
+				</HamburgerButton>
+				{isMobileMenuOpen && (
+					<MobileMenu>
+						<NavItem onClick={() => navigateToPage('')}>{about}</NavItem>
+						<NavItem onClick={() => navigateToPage('trajectory')}>{projects}</NavItem>
+						<NavItem onClick={() => navigateToPage('contact')}>{contact}</NavItem>
+					</MobileMenu>
+
+				)}
+
+
 			</HeaderContent>
 		</HeaderContainer>
 

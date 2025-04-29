@@ -43,6 +43,9 @@ export const Logo = styled(Link)`
 export const Nav = styled.nav`
   display: flex;
   gap: 1.5rem;
+	@media (max-width: 768px) {
+    display: none; 
+  }
 `;
 
 export const NavItem = styled.button`
@@ -78,4 +81,34 @@ export const LanguageSwitcher = styled.div`
 		cursor: pointer;
 		border-color: transparent #3333 transparent transparent;
   }
+
+`;
+
+export const HamburgerButton = styled.button`
+  display: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+	color: ${({ theme }) => theme.colors.primary};
+	&:hover{
+		color: ${({ theme }) => theme.colors.secondary};
+	}
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 999;
 `;
