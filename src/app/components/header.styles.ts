@@ -27,6 +27,9 @@ export const HeaderContent = styled.div`
   width: 100%;
   height: 80px;
 	padding: 2rem;
+	@media (max-width: 768px) {
+    padding: 0.5rem; 
+  }
 `;
 
 export const Logo = styled(Link)`
