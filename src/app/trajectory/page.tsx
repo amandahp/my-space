@@ -38,9 +38,9 @@ export default function Timeline() {
 							{year}
 						</YearMarker>
 
-						{activeItem === index && items.length > 0 && (
+						{activeItem === index && (items as any).length > 0 && (
 							<>
-								{items.map((item) => (
+								{(items as any).map((item) => (
 									<div key={Math.random()} className='item-box'>
 										<h3>{item.title}</h3>
 										<small><strong>{year}</strong></small>
