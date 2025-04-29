@@ -1,47 +1,302 @@
 {
-	"en" :{
+	"en": {
 		"logo": "My Company",
 		"about": "About",
-		"projects": "Projects",
+		"projects": "Trajectory",
 		"contact": "Contact",
 		"language": "Language",
-		"home":{
+		"home": {
 			"imAmanda": "Hi, I'm Amanda.",
 			"position": "I'm a Front-End Developer",
 			"text": "Creating responsive and engaging digital experiences.",
-			"skills":"Skills",
+			"skills": "Skills",
 			"about": "About Me",
-			"textAboutMe": "My journey in programming began during my studies in Telecommunications Systems at the Federal University of Technology – Paraná (UTFPR). That course was my gateway into the world of technology, and it sparked a strong desire to learn more about programming.\n\nWhen the pandemic hit, classes were suspended, and I had to continue studying on my own. That challenge turned into an opportunity: I landed my first internship as a developer. During this experience, I grew a lot, especially by building applications with React and developing automation tools using Python.\n\nIn the following years, I had new professional opportunities that allowed me to broaden my skills even more. I worked with several technologies and deepened my understanding of concepts such as software architecture, Clean Architecture, Design Systems, and micro front-ends.\n\nWhile my current specialty is front-end development, I’ve had frequent experience with back-end and databases, which gives me a more complete view of application development. In 2023, I completed a bootcamp at Ironhack to further improve my performance as a developer.\n\nRight now, I'm focusing on sharpening my Python skills, since I have a strong interest in working with data science in the future — a field I'm truly passionate about.\n\nI’m a naturally curious person, and rarely settle for the first answer. I always strive to deeply understand the problem and find the best possible solution.\n\nOutside of tech, I have a few personal passions: I love photography, traveling, learning new things, and I definitely have a soft spot for data."
+			"textAboutMe": "My journey in programming began during my studies in Telecommunications Systems at the Federal University of Technology – Paraná (UTFPR). That course was my gateway into the world of technology, and it sparked a strong desire to learn more about programming.\n\nWhen the pandemic hit, classes were suspended, and I had to continue studying on my own. That challenge turned into an opportunity: I landed my first internship as a developer. During this experience, I grew a lot, especially by building applications with React and developing automation tools using Python.\n\nIn the following years, I had new professional opportunities that allowed me to broaden my skills even more. I worked with several technologies and deepened my understanding of concepts such as software architecture, Clean Architecture, Design Systems, and micro front-ends.\n\nWhile my current specialty is front-end development, I’ve had frequent experience with back-end and databases, which gives me a more complete view of application development. In 2023, I completed a bootcamp at Ironhack to further improve my performance as a developer.\n\nRight now, I'm focusing on sharpening my Python skills, since I have a strong interest in working with data science in the future — a field I'm truly passionate about.\n\nI’m a naturally curious person, and rarely settle for the first answer. I always strive to deeply understand the problem and find the best possible solution.\n\nOutside of tech, I have a few personal passions: I love photography, traveling, learning new things, and I definitely have a soft spot for data.",
+			"contact": "Contact"
+		},
+		"trajectory": {
+			"title": "My trajectory"
+		},
+		"timeline": {
+			"2019": [
+				{
+					"title": "Degree in Chemical Analysis",
+					"description": "Graduated as a Chemical Analysis Technician from the Federal Institute of Paraná, Brazil."
+				}
+			],
+			"2020": [
+				{
+					"title": "First Steps in Technology",
+					"description": "Began my studies at UTFPR, Brazil, the institution that introduced me to software development."
+				},
+				{
+					"title": "Software Development Internship",
+					"description": "Worked as an intern at IguanaFix, São Paulo, developing web applications.",
+					"details": "Responsible for creating PWAs with ReactJS, Python automation scripts, Git workflows implementation, and adopting development best practices."
+				}
+			],
+			"2021": [
+				{
+					"title": "Front-End Developer",
+					"description": "Joined Wiser Educação, where I honed advanced programming techniques.",
+					"details": "Worked on maintaining existing products, implementing automated tests with Cypress, and developing internal applications with ReactJS and Material UI. Participated in creating an MVP using micro frontends (Angular, Vue, React)."
+				},
+				{
+					"title": "Full-Stack Developer",
+					"description": "Worked at Prisma Promotora, São Paulo, developing complete solutions.",
+					"details": "Responsible for creating layouts, maintaining front-end (ReactJS) and back-end (AdonisJS) code, and implementing new features."
+				}
+			],
+			"2022": [
+				{
+					"title": "Full-Stack Developer",
+					"description": "Joined House of Hagens as a full-stack developer.",
+					"details": "Developed applications from scratch using TDD, created APIs with NestJS, built dashboards with Strapi, and implemented solutions with NextJS."
+				},
+				{
+					"title": "Full-Stack Bootcamp",
+					"description": "Completed Ironhack's intensive bootcamp for technical improvement.",
+					"details": "Expanded my full-stack web development knowledge through hands-on projects."
+				}
+			],
+			"2023": [
+				{
+					"title": "Bachelor's in Systems Analysis and Development",
+					"description": "Began my degree at Anhembi Morumbi University.",
+					"details": "Deepening knowledge in object-oriented programming, Java, and computer science fundamentals."
+				}
+			],
+			"2024": [
+				{
+					"title": "International Transition",
+					"description": "Relocated to another country and started working as a freelancer.",
+					"details": "Adapting to a new market while developing independent projects."
+				}
+			],
+			"2025": [
+				{
+					"title": "Freelance Developer and Data Science Student",
+					"description": "Working on freelance projects with ReactJS, NextJS, GraphQL and MySQL.",
+					"details": "Simultaneously studying Data Science, focusing on Python."
+				}
+			]
+		},
+		"donwloadButton": "Download my résumé HERE",
+		"contactPage": {
+			"title": "Get in Touch",
+			"inputName": "Your Name",
+			"inputEmail": "Email",
+			"inputSubject": "Subject",
+			"inputMessage": "Message",
+			"buttonSend": "Send",
+			"buttonSending": "Sending...",
+			"buttonSuccess": "Message sent!",
+			"whatsappModal": {
+				"title": "Request my WhatsApp",
+				"email": "Email",
+				"tel": "Phone (optional)",
+				"button": "Request"
+			}
 		}
 	},
-	"es":{
+	"es": {
 		"logo": "Mi Empresa",
 		"about": "Acerca de",
-		"projects": "Proyectos",
+		"projects": "Trayectoria",
 		"contact": "Contacto",
 		"language": "Idioma",
 		"home": {
-			"imAmanda": "¡Hola! Soy Amanda.",
+			"imAmanda": "Hola, soy Amanda.",
 			"position": "Soy Desarrolladora Front-End",
-			"text" : "Creando experiencias digitales y responsivas.",
+			"text": "Creando experiencias digitales responsivas y atractivas.",
 			"skills": "Habilidades",
 			"about": "Sobre mí",
-			"textAboutMe":"Mi camino en la programación comenzó durante mis estudios en Sistemas de Telecomunicaciones en la Universidad Tecnológica Federal de Paraná (UTFPR). Ese curso fue mi puerta de entrada al mundo de la tecnología y despertó en mí un fuerte deseo de aprender más sobre programación.\n\nCon la llegada de la pandemia, las clases fueron suspendidas y tuve que continuar mis estudios de forma autodidacta. Ese desafío se convirtió en una oportunidad: conseguí mi primera pasantía como desarrolladora. Durante esa experiencia, crecí mucho, especialmente desarrollando aplicaciones con React y creando herramientas de automatización con Python.\n\nEn los años siguientes, tuve nuevas oportunidades profesionales que me permitieron ampliar aún más mis conocimientos. Trabajé con varias tecnologías y profundicé en conceptos como arquitectura de software, Clean Architecture, Design Systems y micro front-ends.\n\nActualmente, mi especialidad es el desarrollo front-end, aunque he tenido bastante contacto con back-end y bases de datos, lo que me da una visión más completa del desarrollo de aplicaciones. En 2023, realicé un bootcamp en Ironhack con el objetivo de mejorar aún más mi desempeño como programadora.\n\nHoy en día, estoy enfocada en profundizar mis conocimientos en Python, ya que tengo mucho interés en trabajar en el futuro con ciencia de datos, un área que me encanta.\n\nSoy una persona naturalmente curiosa y rara vez me conformo con la primera respuesta. Siempre busco comprender bien el problema y encontrar la mejor solución posible.\n\nFuera del mundo tech, tengo algunas pasiones personales: me encanta la fotografía, viajar, aprender cosas nuevas y, sin duda, tengo una debilidad por los datos."
+			"textAboutMe": "Mi camino en la programación comenzó durante mis estudios en Sistemas de Telecomunicaciones en la Universidad Federal de Tecnología – Paraná (UTFPR). Ese curso fue mi puerta de entrada al mundo de la tecnología y despertó un fuerte deseo de aprender más sobre programación.\n\nCuando llegó la pandemia, las clases fueron suspendidas, y tuve que continuar estudiando por mi cuenta. Ese desafío se convirtió en una oportunidad: conseguí mi primera pasantía como desarrolladora. Durante esta experiencia, crecí mucho, especialmente construyendo aplicaciones con React y desarrollando herramientas de automatización con Python.\n\nEn los siguientes años, tuve nuevas oportunidades profesionales que me permitieron ampliar aún más mis habilidades. Trabajé con varias tecnologías y profundicé mi comprensión de conceptos como arquitectura de software, Clean Architecture, Design Systems y micro frontends.\n\nAunque mi especialidad actual es el desarrollo front-end, he tenido experiencia frecuente con back-end y bases de datos, lo que me da una visión más completa del desarrollo de aplicaciones. En 2023, completé un bootcamp en Ironhack para mejorar mi desempeño como desarrolladora.\n\nAhora mismo, me estoy enfocando en perfeccionar mis habilidades en Python, ya que tengo un gran interés en trabajar con ciencia de datos en el futuro, un campo que me apasiona profundamente.\n\nSoy una persona naturalmente curiosa y rara vez me conformo con la primera respuesta. Siempre me esfuerzo por entender profundamente el problema y encontrar la mejor solución posible.\n\nFuera de la tecnología, tengo algunas pasiones personales: me encanta la fotografía, viajar, aprender cosas nuevas y definitivamente tengo una debilidad por los datos.",
+			"contact": "Contacto"
+		},
+		"trajectory": {
+			"title": "Mi Trayectoria"
+		},
+		"timeline": {
+			"2019": [
+				{
+					"title": "Título en Análisis Químicos",
+					"description": "Me gradué como Técnica en Análises Químicas en el Instituto Federal de Paraná, Brasil."
+				}
+			],
+			"2020": [
+				{
+					"title": "Pasantía en Desarrollo de Software",
+					"description": "Trabajé como pasante en IguanaFix, São Paulo, desarrollando aplicaciones web.",
+					"details": "Responsable de crear PWAs con ReactJS, scripts de automatización con Python, implementación de flujos Git y adopción de buenas prácticas de desarrollo."
+				},
+				{
+					"title": "Primeros Pasos en Tecnología",
+					"description": "Comencé mis estudios en UTFPR, Brasil, institución que me introdujo al desarrollo de software."
+				}
+			],
+			"2021": [
+				{
+					"title": "Desarrolladora Full-Stack",
+					"description": "Trabajé en Prisma Promotora, São Paulo, desarrollando soluciones completas.",
+					"details": "Responsable de crear diseños, mantener código front-end (ReactJS) y back-end (AdonisJS), e implementar nuevas funcionalidades."
+				},
+				{
+					"title": "Desarrolladora Front-End",
+					"description": "Ingresé a Wiser Educação, donde perfeccioné técnicas avanzadas de programación.",
+					"details": "Participé en el mantenimiento de productos existentes, implementación de pruebas automatizadas con Cypress y desarrollo de aplicaciones internas con ReactJS y Material UI. Colaboré en la creación de un MVP usando micro frontends (Angular, Vue, React)."
+				}
+			],
+			"2022": [
+				{
+					"title": "Desarrolladora Full-Stack",
+					"description": "Ingresé a House of Hagens como desarrolladora full-stack.",
+					"details": "Desarrollé aplicaciones desde cero usando TDD, creé APIs con NestJS, construí dashboards con Strapi e implementé soluciones con NextJS."
+				},
+				{
+					"title": "Bootcamp Full-Stack",
+					"description": "Completé el bootcamp intensivo de Ironhack para mejora técnica.",
+					"details": "Amplié mis conocimientos en desarrollo web full-stack mediante proyectos prácticos."
+				}
+			],
+			"2023": [
+				{
+					"title": "Licenciatura en Análisis y Desarrollo de Sistemas",
+					"description": "Comencé mi grado en la Universidad Anhembi Morumbi.",
+					"details": "Profundizando conocimientos en programación orientada a objetos, Java y fundamentos de la ciencia de la computación."
+				}
+			],
+			"2024": [
+				{
+					"title": "Transición Internacional",
+					"description": "Realicé un cambio de país e inicié trabajos como freelancer.",
+					"details": "Adaptación al nuevo mercado mientras desarrollaba proyectos independientes."
+				}
+			],
+			"2025": [
+				{
+					"title": "Desarrolladora Freelancer y Estudiante de Data Science",
+					"description": "Trabajo en proyectos freelance con ReactJS, NextJS, GraphQL y MySQL.",
+					"details": "Simultáneamente, estudio Ciencia de Datos, con enfoque en Python."
+				}
+			]
+		},
+		"donwloadButton": "Descarga mi currículum AQUÍ",
+		"contactPage": {
+			"title": "Ponte en Contacto",
+			"inputName": "Tu Nombre",
+			"inputEmail": "Correo Electrónico",
+			"inputSubject": "Asunto",
+			"inputMessage": "Mensaje",
+			"buttonSend": "Enviar",
+			"buttonSending": "Enviando...",
+			"buttonSuccess": "¡Mensaje enviado!",
+			"whatsappModal": {
+				"title": "Solicita mi WhatsApp",
+				"email": "Correo Electrónico",
+				"tel": "Teléfono (opcional)",
+				"button": "Solicitar"
+			}
 		}
 	},
 	"pt": {
-		"logo": "Meu logo",
+		"logo": "Minha Empresa",
 		"about": "Sobre",
-		"projects": "Projetos",
+		"projects": "Trajetória",
 		"contact": "Contato",
 		"language": "Idioma",
 		"home": {
-			"imAmanda": "Olá, Eu sou a Amanda.",
-			"position": "Sou desenvolvedora Front-End",
-			"text": "Criando experiências digitais e responsivas",
-			"skills":"Habilidades",
-			"about": "Sobre Mim",
-			"textAboutMe": "Minha jornada na programação começou durante meus estudos em Sistemas de Telecomunicações na Universidade Tecnológica Federal do Paraná (UTFPR). Esse curso foi minha porta de entrada para o universo da tecnologia, despertando em mim uma grande vontade de aprender mais sobre programação.\n\nCom a chegada da pandemia, as aulas foram suspensas, e precisei continuar estudando por conta própria. Esse desafio acabou sendo uma oportunidade: consegui meu primeiro estágio como desenvolvedora. Durante essa experiência, evoluí muito, especialmente no desenvolvimento de aplicações com React e na criação de ferramentas de automação usando Python.\n\nNos anos seguintes, tive novas oportunidades profissionais que me permitiram expandir ainda mais meus conhecimentos. Trabalhei com diversas tecnologias e aprofundei conceitos como arquitetura de software, Clean Architecture, Design System e micro front-ends.\n\nMinha especialidade atual é a área de front-end, mas já tive bastante contato com back-end e banco de dados, o que me proporciona uma visão mais completa do desenvolvimento de aplicações. Em 2023, participei de um bootcamp na Ironhack, com o objetivo de melhorar ainda mais minha performance como programadora.\n\nAtualmente, estou me dedicando ao aperfeiçoamento em Python, pois tenho muito interesse em atuar futuramente com ciência de dados — uma área pela qual tenho verdadeira admiração.\n\nSou uma pessoa curiosa por natureza, e raramente aceito a primeira resposta como definitiva. Sempre busco entender o problema a fundo e encontrar a melhor solução possível.\n\nAlém da tecnologia, tenho alguns hobbies que me acompanham há anos: adoro fotografia, viajar, aprender coisas novas e, claro, tenho uma queda especial por dados."
+			"imAmanda": "Oi, eu sou Amanda.",
+			"position": "Sou Desenvolvedora Front-End",
+			"text": "Criando experiências digitais responsivas e envolventes.",
+			"skills": "Habilidades",
+			"about": "Sobre mim",
+			"textAboutMe": "Minha jornada na programação começou durante meus estudos em Sistemas de Telecomunicações na Universidade Federal de Tecnologia – Paraná (UTFPR). Esse curso foi minha porta de entrada para o mundo da tecnologia e despertou um forte desejo de aprender mais sobre programação.\n\nQuando a pandemia chegou, as aulas foram suspensas, e eu precisei continuar estudando sozinha. Esse desafio se tornou uma oportunidade: consegui meu primeiro estágio como desenvolvedora. Durante essa experiência, cresci muito, especialmente ao construir aplicações com React e desenvolver ferramentas de automação com Python.\n\nNos anos seguintes, tive novas oportunidades profissionais que me permitiram expandir ainda mais minhas habilidades. Trabalhei com diversas tecnologias e aprofundei meu entendimento de conceitos como arquitetura de software, Clean Architecture, Design Systems e micro frontends.\n\nEmbora minha especialidade atual seja o desenvolvimento front-end, tenho experiência frequente com back-end e banco de dados, o que me proporciona uma visão mais completa do desenvolvimento de aplicações. Em 2023, completei um bootcamp na Ironhack para melhorar meu desempenho como desenvolvedora.\n\nAgora, estou focando em aprimorar minhas habilidades em Python, pois tenho grande interesse em trabalhar com ciência de dados no futuro, um campo pelo qual sou verdadeiramente apaixonada.\n\nSou uma pessoa naturalmente curiosa e raramente me contento com a primeira resposta. Sempre me esforço para entender profundamente o problema e encontrar a melhor solução possível.\n\nFora da tecnologia, tenho algumas paixões pessoais: adoro fotografia, viajar, aprender coisas novas e definitivamente tenho uma queda por dados.",
+			"contact": "Contato"
+		},
+		"trajectory": {
+			"title": "Minha Trajetoria"
+		},
+		"timeline": {
+			"2019": [
+				{
+					"title": "Formação em Análises Químicas",
+					"description": "Formei-me como Técnica em Análises Químicas pelo Instituto Federal do Paraná, Brasil."
+				}
+			],
+			"2020": [
+				{
+					"title": "Estágio em Desenvolvimento de Software",
+					"description": "Trabalhei como estagiária na IguanaFix, São Paulo, desenvolvendo aplicações web.",
+					"details": "Responsável por criar PWAs com ReactJS, scripts de automação com Python, implementação de fluxos Git e adoção de boas práticas de desenvolvimento."
+				},
+				{
+					"title": "Primeiros Passos na Tecnologia",
+					"description": "Iniciei meus estudos na UTFPR, Brasil, a instituição que me apresentou ao desenvolvimento de software."
+				}
+			],
+			"2021": [
+				{
+					"title": "Desenvolvedora Full-Stack",
+					"description": "Trabalhei na Prisma Promotora, São Paulo, desenvolvendo soluções completas.",
+					"details": "Responsável por criar layouts, manter código front-end (ReactJS) e back-end (AdonisJS) e implementar novas funcionalidades."
+				},
+				{
+					"title": "Desenvolvedora Front-End",
+					"description": "Entrei para a Wiser Educação, onde aprimorei técnicas avançadas de programação.",
+					"details": "Trabalhei no manutenção de produtos existentes, implementação de testes automatizados com Cypress e desenvolvimento de aplicações internas com ReactJS e Material UI. Participei na criação de um MVP usando micro frontends (Angular, Vue, React)."
+				}
+			],
+			"2022": [
+				{
+					"title": "Desenvolvedora Full-Stack",
+					"description": "Entrei para a House of Hagens como desenvolvedora full-stack.",
+					"details": "Desenvolvi aplicações do zero usando TDD, criei APIs com NestJS, construí dashboards com Strapi e implementei soluções com NextJS."
+				},
+				{
+					"title": "Bootcamp Full-Stack",
+					"description": "Completei o bootcamp intensivo da Ironhack para aprimoramento técnico.",
+					"details": "Ampliando meus conhecimentos em desenvolvimento web full-stack por meio de projetos práticos."
+				}
+			],
+			"2023": [
+				{
+					"title": "Bacharelado em Análise e Desenvolvimento de Sistemas",
+					"description": "Iniciei meu curso na Universidade Anhembi Morumbi.",
+					"details": "Aprofundando meus conhecimentos em programação orientada a objetos, Java e fundamentos da ciência da computação."
+				}
+			],
+			"2024": [
+				{
+					"title": "Transição Internacional",
+					"description": "Mudei de país e comecei a trabalhar como freelancer.",
+					"details": "Me adaptando ao novo mercado enquanto desenvolvo projetos independentes."
+				}
+			],
+			"2025": [
+				{
+					"title": "Desenvolvedora Freelancer e Estudante de Data Science",
+					"description": "Trabalho em projetos freelance com ReactJS, NextJS, GraphQL e MySQL.",
+					"details": "Simultaneamente, estudo Ciência de Dados, com foco em Python."
+				}
+			]
+		},
+		"donwloadButton": "Baixe meu currículo AQUI",
+		"contactPage": {
+			"title": "Entre Em Contato",
+			"inputName": "Seu Nome",
+			"inputEmail": "E-mail",
+			"inputSubject": "Assunto",
+			"inputMessage": "Mensagem",
+			"buttonSend": "Enviar",
+			"buttonSending": "Enviando...",
+			"buttonSuccess": "Mensagem Enviada com Sucesso!",
+			"whatsappModal": {
+				"title": "Solicite o meu WhatsApp",
+				"email": "E-mail",
+				"tel": "Telefone (opcional)",
+				"button": "Solicitar"
+			}
 		}
 	}
 }

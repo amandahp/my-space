@@ -1,22 +1,25 @@
+type ColorsType = {
+	background: string;
+	text: string;
+	primary: string;
+	secondary: string;
+	gradient: string;
+	black: string;
+};
+
+export type ThemeType = {
+	colors: ColorsType;
+};
+
 export const lightTheme = {
-  colors: {
-    background: "#FFFFFF",
-    text: "#1E1E1E",
-    primary: "#6D28D9",     // roxo
-    secondary: "#0ABAB5",   // tiffany
-    gradient: "linear-gradient(45deg, #6D28D9 0%, #0ABAB5 100%)",
+	colors: {
+		background: "#FFFFFF",
+		text: "#1E1E1E",
+		primary: "#6D28D9",
+		secondary: "#0ABAB5",
+		gradient: "linear-gradient(45deg, #6D28D9 0%, #0ABAB5 100%)",
 		black: "#474A51",
-  },
+	},
 };
 
-export const darkTheme = {
-  colors: {
-    background: "#1E1E1E",
-    text: "#FFFFFF",
-    primary: "#8B5CF6",     // roxo claro
-    secondary: "#0ABAB5",   // tiffany
-    gradient: "linear-gradient(45deg, #8B5CF6 0%, #0ABAB5 100%)",
-  },
-};
 
-export type ThemeType = typeof lightTheme;

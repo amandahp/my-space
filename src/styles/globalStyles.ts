@@ -7,9 +7,12 @@ export const GlobalStyles = createGlobalStyle`
 
   html, body {
 		width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+		height: 100vh;
+  	margin: 0;
+  	padding: 0;
+  	overflow-x: hidden;
+  	font-family: 'Quicksand', sans-serif;
+
   }
 
   a {

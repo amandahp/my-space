@@ -2,57 +2,62 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { HeaderContainer, HeaderContent, Logo, NavItem, LanguageSwitcher, Nav } from './header.styles';
-import { useLanguage} from '../../context/LanguageContext';
+import { useLanguage } from '../lib/context/LanguageContext';
 import translations from "../../data/translate.json";
 
 
-type Lang = 'en' | 'es' | 'pt'
-
 const Header: React.FC = () => {
 	const [isFixed, setIsFixed] = React.useState(false);
+	const router = useRouter();
 
-  React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
+	const navigateToPage = (page: string) => {
+		router.push(`/${page}`);
+	};
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+	React.useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setIsFixed(true);
+			} else {
+				setIsFixed(false);
+			}
+		};
 
-  const { lang, setLang } = useLanguage();
-  const { about, projects, contact } = translations[lang];
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
-  return (
-    <HeaderContainer className={isFixed ? 'fixed' : ''}>
-      <HeaderContent>
+
+	const { lang, setLang } = useLanguage();
+	const { about, projects, contact } = translations[lang];
+
+	return (
+		<HeaderContainer className={isFixed ? 'fixed' : ''}>
+			<HeaderContent>
 				<Logo href="/">
 					<Image
 						src="/utils/ahp-high-resolution-logo.png"
 						alt="Logo de Amanda"
-						width={50}
-						height={50}
+						width={200}
+						height={200}
 					/>
 				</Logo>
-        <Nav>
-					<NavItem href="#about">{about}</NavItem>
-					<NavItem href="#projects">{projects}</NavItem>
-					<NavItem href="#contact">{contact}</NavItem>
-        </Nav>
-        <LanguageSwitcher>
-					<button onClick={() => setLang('pt')}>PT</button> 
-      		<button onClick={() => setLang('en')}>EN</button> 
-      		<button onClick={() => setLang('es')}>ES</button>
-        </LanguageSwitcher>
-      </HeaderContent>
-    </HeaderContainer>
+				<Nav>
+					<NavItem onClick={() => navigateToPage('')}>{about}</NavItem>
+					<NavItem onClick={() => navigateToPage('trajectory')}>{projects}</NavItem>
+					<NavItem onClick={() => navigateToPage('contact')}>{contact}</NavItem>
+				</Nav>
+				<LanguageSwitcher>
+					<button onClick={() => setLang('pt')}>PT</button>
+					<button onClick={() => setLang('en')}>EN</button>
+					<button onClick={() => setLang('es')}>ES</button>
+				</LanguageSwitcher>
+			</HeaderContent>
+		</HeaderContainer>
 
-  );
+	);
 };
 
 export default Header;

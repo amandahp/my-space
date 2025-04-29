@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   position: relative;
   top: 0;
   width: 100%;
-  background-color: ${({theme}) => theme.colors.background };
+  background-color: ${({ theme }) => theme.colors.background};
   transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
   z-index: 100;
   &.fixed {
@@ -45,14 +45,21 @@ export const Nav = styled.nav`
   gap: 1.5rem;
 `;
 
-export const NavItem = styled(Link)<{ active?: boolean }>`
+export const NavItem = styled.button`
   text-decoration: none;
-  color: ${({ active, theme }) => (active ? theme.colors.purple : theme.colors.text)};
-  font-weight: ${({ active }) => (active ? '600' : '400')};
-  transition: color 0.3s;
-
+  padding: 10px 20px;  
+  border: none;  
+  background-color: transparent;
+  border-radius: 5px;  
+  cursor: pointer; 
+	font-size: 1rem;
+  transition: all 0.3s ease; 
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
+	}
+
+  &:focus {
+    outline: none; 
   }
 `;
 
@@ -61,14 +68,14 @@ export const LanguageSwitcher = styled.div`
 
   button {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.secondaryText};
+    color: ${({ theme }) => theme.colors.secondary};
     &:hover {
-      color: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.primary};
     }
 		border-style: solid;
 		border-width: 0 2px 0 0;
 		background: transparent;
 		cursor: pointer;
-		border-color: transparent #black transparent transparent;
+		border-color: transparent #3333 transparent transparent;
   }
 `;

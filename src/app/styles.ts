@@ -7,7 +7,9 @@ export const Container = styled.div`
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
-
+	 .form{
+	 	background-color: ${({ theme }) => theme.colors.background}
+	 }
 
 `;
 
@@ -24,19 +26,19 @@ export const Section = styled.section`
   }
 
 	.name, .about {
-		color: ${({theme}) => theme.colors.black};
+		color: ${({ theme }) => theme.colors.black};
 		font-size: 40px;
 	}
 	h2 {
-		color: ${({theme}) => theme.colors.secondary};
+		color: ${({ theme }) => theme.colors.secondary};
 		font-size: 30px;
 	}
 	.skills {
-		color: ${({theme}) => theme.colors.secondary};
+		color: ${({ theme }) => theme.colors.secondary};
 		font-size: 40px;
 	}
 	p {
-		color: ${({theme}) => theme.colors.black};
+		color: ${({ theme }) => theme.colors.black};
 		font-size: 20px;
 		text-align: justify;
 	}
@@ -65,13 +67,13 @@ export const TextBlock = styled.div`
     line-height: 1.6;
   }
 
-	a {
-		padding: 0rem 2rem 0rem 0rem;
-		&:hover {
-    color: ${({ theme }) => theme.colors.secondary};
-		transition: color 0.3s ease, border-bottom 0.3s ease	
-	}
-
+  a {
+    padding: 0rem 2rem 0rem 0rem;
+    &:hover {
+      color: ${({ theme }) => theme.colors.secondary};
+      transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+  }
 `;
 
 
@@ -105,7 +107,7 @@ export const SkillBox = styled.div`
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
-  background: ${({ theme }) => theme.colors.boxBg || '#f0f0f0'};
+  background: ${({ theme }) => theme.colors.background || '#f0f0f0'};
   border-radius: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 

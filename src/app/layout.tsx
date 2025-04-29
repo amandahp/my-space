@@ -1,44 +1,36 @@
-'use client'
-import { ThemeProvider } from 'styled-components'
-import { LanguageProvider } from '../context/LanguageContext';
-import StyledComponentsRegistry from '../lib/registry'
-import Header from './components/header'
+// app/layout.tsx
+'use client';
 
-import { GlobalStyles } from '../styles/globalStyles'
-import { darkTheme, lightTheme } from '../styles/theme'
+import { ThemeProvider } from 'styled-components';
+import { LanguageProvider } from './lib/context/LanguageContext';
+import StyledComponentsRegistry from './lib/registry';
+import Header from './components/header';
+import { GlobalStyles } from '../styles/globalStyles';
+import { lightTheme } from '../styles/theme';
+import Head from 'next/head';
+import Footer from './components/footer';
 
-
-
-function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-
-
-  return (
-    <html lang='en'>
-			<head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+	return (
+		<html lang="en">
+			<Head>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@500;700&display=swap"
+					rel="stylesheet"
+				/>
+			</Head>
+			<body>
 				<LanguageProvider>
-        	<StyledComponentsRegistry>
-        	  <ThemeProvider theme={lightTheme}>
-        	    <GlobalStyles />
-        	    <Header />
-        	    <main>{children}</main>
-        	    <footer>
-        	    </footer>
-        	  </ThemeProvider>
-        	</StyledComponentsRegistry>
+					<StyledComponentsRegistry>
+						<ThemeProvider theme={lightTheme}>
+							<GlobalStyles />
+							<Header />
+							<main>{children}</main>
+							<Footer></Footer>
+						</ThemeProvider>
+					</StyledComponentsRegistry>
 				</LanguageProvider>
-      </body>
-    </html>
-  )
+			</body>
+		</html>
+	);
 }
-
-export default RootLayout;
