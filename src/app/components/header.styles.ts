@@ -28,7 +28,7 @@ export const HeaderContent = styled.div`
   height: 80px;
 	padding: 2rem;
 	@media (max-width: 768px) {
-    padding: 0.5rem; 
+    padding: 0.1rem;
   }
 `;
 
