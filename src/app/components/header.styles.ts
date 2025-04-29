@@ -114,4 +114,8 @@ export const MobileMenu = styled.div`
   flex-direction: column;
   gap: 1rem;
   z-index: 999;
+	color: ${({ theme }) => theme.colors.primary};
+	&:hover{
+		color: ${({ theme }) => theme.colors.secondary};
+	}
 `;
