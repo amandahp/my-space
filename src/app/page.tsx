@@ -34,7 +34,7 @@ export default function Home() {
 	const { imAmanda, position, skills: skillsText, about, textAboutMe } = home;
 
 	const github = process.env.NEXT_PUBLIC_GITHUB_URL;
-	const medium = process.env.NEXT_PUBLIC_MEDIUM_URL;
+
 	const linkedin = process.env.NEXT_PUBLIC_LINKEDIN_URL;
 
 	useEffect(() => {

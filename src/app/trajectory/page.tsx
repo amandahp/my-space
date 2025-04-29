@@ -40,8 +40,8 @@ export default function Timeline() {
 
 						{activeItem === index && items.length > 0 && (
 							<>
-								{items.map((item, itemIndex) => (
-									<div className='item-box'>
+								{items.map((item) => (
+									<div key={Math.random()} className='item-box'>
 										<h3>{item.title}</h3>
 										<small><strong>{year}</strong></small>
 										<p>{item.description}</p>
