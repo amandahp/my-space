@@ -46,6 +46,7 @@ export const Container = styled.main`
 	padding: 4rem;
 	color: ${({ theme }) => theme.colors.secondary};
 	text-transform: uppercase;
+	text-align: center;
 }
 
 `;

@@ -8,6 +8,7 @@ import WhatsAppButton from '../components/whatsappButton';
 import { useLanguage } from '../lib/context/LanguageContext';
 import translations from '../../data/translate.json';
 import { LinkButton, Links, Container, FormContainer } from './styles';
+import { TitleContainer } from '../trajectory/styles';
 
 
 
@@ -85,7 +86,10 @@ export default function ContactPage() {
 
 	return (
 		<Container id="root">
-			<h2>{contactPage.title}</h2>
+			<TitleContainer>
+				<h2>{contactPage.title}</h2>
+			</TitleContainer>
+
 			<FormContainer>
 				<ContactForm handleForm={handleFormSubmit} isSending={isSending} success={success} />
 
