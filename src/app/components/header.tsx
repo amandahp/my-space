@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { HeaderContainer, HeaderContent, Logo, NavItem, LanguageSwitcher, Nav, HamburgerButton, MobileMenu } from './header.styles';
+import { HeaderContainer, HeaderContent, Logo, NavItem, LanguageSwitcher, Nav, HamburgerButton, MobileMenu, LanguageMobile } from './header.styles';
 import { useLanguage } from '../lib/context/LanguageContext';
 import translations from "../../data/translate.json";
 
@@ -67,6 +67,11 @@ const Header: React.FC = () => {
 						<NavItem onClick={() => navigateToPage('')}>{about}</NavItem>
 						<NavItem onClick={() => navigateToPage('trajectory')}>{projects}</NavItem>
 						<NavItem onClick={() => navigateToPage('contact')}>{contact}</NavItem>
+						<LanguageMobile>
+							<button onClick={() => setLang('pt')}>PT</button>
+							<button onClick={() => setLang('en')}>EN</button>
+							<button onClick={() => setLang('es')}>ES</button>
+						</LanguageMobile>
 					</MobileMenu>
 
 				)}

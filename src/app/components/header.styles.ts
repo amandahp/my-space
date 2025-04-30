@@ -83,8 +83,30 @@ export const LanguageSwitcher = styled.div`
 		background: transparent;
 		cursor: pointer;
 		border-color: transparent #3333 transparent transparent;
+		@media (max-width: 768px) {
+    	display: none; 
+  	}
   }
+`;
 
+export const LanguageMobile = styled.div`
+  font-size: 0.9rem;
+
+  button {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.secondary};
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+		border-style: solid;
+		border-width: 0 2px 0 0;
+		background: transparent;
+		cursor: pointer;
+		border-color: transparent #3333 transparent transparent;
+		@media (min-width: 768px) {
+    	display: none; 
+  	}
+  }
 `;
 
 export const HamburgerButton = styled.button`

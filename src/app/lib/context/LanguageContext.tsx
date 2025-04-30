@@ -2,7 +2,6 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-
 interface LanguageContextType {
 	lang: string;
 	setLang: (lang: string) => void;
@@ -15,10 +14,17 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
 	useEffect(() => {
 		const savedLang = localStorage.getItem('lang');
-		if (savedLang) setLangState(savedLang);
+		if (savedLang) {
+			setLangState(savedLang);
+		} else {
+			const browserLang = navigator.language || navigator.languages[0] || 'en';
+			const normalizedLang = browserLang.split('-')[0];
+			setLangState(normalizedLang);
+			localStorage.setItem('lang', normalizedLang);
+		}
 	}, []);
 
-	const setLang = (newLang) => {
+	const setLang = (newLang: string) => {
 		setLangState(newLang);
 		localStorage.setItem('lang', newLang);
 	};
