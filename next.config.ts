@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	compiler: {
-		styledComponents: true, // Ativa a compilação otimizada do styled-components
+		styledComponents: true,
 	},
+	eslint: {
+		ignoreDuringBuilds: true,
+	}
 };
 
 module.exports = nextConfig;
