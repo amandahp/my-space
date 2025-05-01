@@ -8,7 +8,7 @@ const Footer = () => {
 		<FooterContainer>
 			Created with
 			<a href={github} target="_blank" rel="noopener noreferrer">
-				❤️
+				<span>&#10084;</span>
 			</a>
 		</FooterContainer>
 	);

@@ -8,4 +8,7 @@ export const FooterContainer = styled.footer`
   padding: 1rem;
   font-size: 1.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+	span{
+		color: ${({ theme }) => theme.colors.primary}
+	}
 `;
